@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    margin: 40px 20px;
+    border: 2px black dotted;
+}
+
+.box {
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#one {
+    position: relative;
+    bottom: 12px;
+}
+#two {
+    background-color: green;
+}
+
+#three {
+    position: absolute;
+    top: 25px;
+    background-color: green;
+}
+/* Por defecto static */
+
+.parent2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent2 div:first-child {
+    position: relative;
+    top: 40px;
+    width: 50%;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.parent2 div:nth-child(2){
+    width: 90%;
+    font-size: 12px;
+    background-color: dodgerblue;
+    padding: 50px;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
