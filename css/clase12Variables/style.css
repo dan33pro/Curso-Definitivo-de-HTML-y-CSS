@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #003476;
+    --secundary-color: #b4d2f7;
+    --font-bg: 4rem;
+    --font-md: 1.8rem;
+    --font-sm: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--font-md);
+}
+
+h1 {
+    font-size: var(--font-bg);
+    color: var(--primary-color)
+}
+
+footer {
+    width: 100vh;
+    height: 15vh;
+    background-color: var(--secundary-color);
+
+}

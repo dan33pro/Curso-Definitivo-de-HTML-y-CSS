@@ -221,6 +221,7 @@ html {
         flex-direction: column;
         min-width: 150px;
         margin: 0 10px;
+        height: auto;
     }
     .box-aside span{
         font-size: 1.5rem;
