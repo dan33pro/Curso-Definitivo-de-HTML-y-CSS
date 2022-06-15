@@ -1,0 +1,20 @@
+/* Hermano imediato */
+h2 + p {
+    color: red;
+}
+
+/* Hermanos generales */
+h2 ~ p {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Hijo directo */
+span > p {
+    color: yellow;
+}
+
+/* Descendiente */
+span p::after{
+    content: '👌';
+}

@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: crimson;
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.name-logo {
+    margin-left: 10px;
+    align-self: center;
+    color: white;
+}
+
+.name-logo div:first-child {
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 3px;
+}
+
+.name-logo div:last-child {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    padding: 3px;
+}
+.nav-header {
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-header ul {
+    display: flex;
+    padding: 0 10px;
+    list-style: none;
+}
+
+.nav-header li {
+    margin: 0 10px;
+}
+
+.nav-header img{
+    width: 30px;
+    filter: invert();
+}
+
+.principal-content {
+    display: flex;
+}
+
+.aside-left {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-right: 3px crimson solid;
+    padding: 15px 5px;
+    width: 20%;
+    height: 83vh;
+}
+
+.box-aside {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20191124/pngtree-bright-red-geometric-background-triangles-squares-image_323258.jpg);    
+    margin: 0 20px;
+    height: 80%;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box;
+}
+
+.box-aside span{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.box-aside img {
+    width: 35%;    
+}
+
+.principal-content  main {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center
+}
+
+.title-main-container {
+    position: absolute;
+    top: 25px;
+}
+
+.principal-content main span {
+    font-size: 1.4rem;
+}
+
+.principal-content main span:nth-child(2) {
+    font-weight: bold;
+}
+
+.container-shirts {
+    display: grid;
+    height: 85%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.card-shirt {
+    padding: 20px;
+    margin: 20px 15px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 2px gray;
+}
+
+.card-shirt img {
+    width: 100%;
+}
+.info-card p {
+    text-align: center;
+}
+.info-card p:first-child {
+    font-size: 2rem;
+}
+
+.info-card p:last-child {
+    font-size: 3rem;
+    font-weight: bold
+}
+
+.foot-page {
+    height: 7vh;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.list-foot {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.list-foot li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 12px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.list-foot li img {
+    width: 25px;
+}
+
+.one-list li img {
+    filter: invert();
+}
+
+.two-list li:nth-child(2), 
+.two-list li:nth-child(3),
+.two-list li:nth-child(4) {
+    background-color: white;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 0 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        height: 10vh;
+    }
+    .name-logo {
+        display: none;
+    }
+
+    .nav-header img {
+        width: 25px;
+    }
+
+    .principal-content {
+        flex-direction: column;
+        height: 80vh; 
+    }
+
+    .aside-left {
+        width: 100vw;
+        height: 30vh;
+        border-bottom: 3px crimson solid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .box-aside {
+        align-self: center;
+        justify-self: center;
+        flex-direction: column;
+        min-width: 150px;
+        margin: 0 10px;
+        height: auto;
+    }
+    .box-aside span{
+        font-size: 1.5rem;
+    }
+
+    .box-aside img {
+        min-width: 60px;
+        max-width: 190px;
+    }
+
+    .title-main-container {
+        display: none;
+    }
+
+    #content {
+        width: 100vw;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .container-shirts {
+        width: 100vw;
+        height: 42vh;
+        align-items: center;
+    }
+
+    .card-shirt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        min-height: 230px;
+        min-width: 150px;
+        margin: 0 10px;
+    }
+
+    .card-shirt img {
+        max-width: 120px;
+    }
+
+    .info-card p:first-child{
+        font-size: 1.2rem;
+    }
+
+    .info-card p:last-child{
+        font-size: 2rem;
+    }
+    
+    .foot-page {
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .two-list {
+        display: none;
+    }
+}
+
